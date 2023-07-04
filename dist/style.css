@@ -691,8 +691,8 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/images\/mobile\/image-header\.jpg\'\)\] {
-  background-image: url('/images/mobile/image-header.jpg');
+.bg-\[url\(\'\.\.\/images\/mobile\/image-header\.jpg\'\)\] {
+  background-image: url('../images/mobile/image-header.jpg');
 }
 
 .bg-cover {
@@ -1020,10 +1020,6 @@ video {
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
 
-  .max-\[1024px\]\:p-12 {
-    padding: 3rem;
-  }
-
   .max-\[1024px\]\:p-8 {
     padding: 2rem;
   }
@@ -1032,19 +1028,9 @@ video {
     text-align: center;
   }
 
-  .max-\[1024px\]\:text-black {
-    --tw-text-opacity: 1;
-    color: rgb(0 0 0 / var(--tw-text-opacity));
-  }
-
   .max-\[1024px\]\:text-neutural-Very-dark-grayish-blue {
     --tw-text-opacity: 1;
     color: hsl(213 9% 39% / var(--tw-text-opacity));
-  }
-
-  .max-\[1024px\]\:before\:hidden::before {
-    content: var(--tw-content);
-    display: none;
   }
 
   .max-\[1024px\]\:hover\:bg-primary-yellow:hover {
@@ -1065,6 +1051,10 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:order-1 {
+    order: 1;
+  }
+
   .lg\:mx-20 {
     margin-left: 5rem;
     margin-right: 5rem;
@@ -1134,8 +1124,8 @@ video {
     align-items: center;
   }
 
-  .lg\:bg-\[url\(\'\/images\/desktop\/image-header\.jpg\'\)\] {
-    background-image: url('/images/desktop/image-header.jpg');
+  .lg\:bg-\[url\(\'\.\.\/images\/desktop\/image-header\.jpg\'\)\] {
+    background-image: url('../images/desktop/image-header.jpg');
   }
 
   .lg\:px-10 {
